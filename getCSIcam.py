@@ -88,9 +88,6 @@ def child_get_img():
     
     while( ret ):
         ret, CSI_img = CSIcap.read()
-        cv2.imshow( 'CSIimage-MTCC.py', CSI_img )
-        
-        cv2.waitKey( 1 )
         
         if END_SAFELY == 1:
             print('child break')
