@@ -11,7 +11,7 @@ def get_thermal_cam():
     
     thermal_cam = cv2.VideoCapture( 1 )
 
-    ret, img = thermal_cam.read
+    ret, img = thermal_cam.read()
     
     return ret, thermal_cam
 
