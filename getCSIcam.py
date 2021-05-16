@@ -121,7 +121,7 @@ def show_image():
     return 
     # 離開 返回 main 等待 child thread 結束
     
-t = threading.Thread( target = child_get_img() )
+t = threading.Thread( target = child_get_img )
 # 由此定義 子執行緒開始後的第一個函數
 
 if __name__ == '__main__':
